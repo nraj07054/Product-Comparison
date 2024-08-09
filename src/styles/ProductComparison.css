@@ -1,0 +1,122 @@
+/* Header styling */
+.header {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #007bff,
+    #00c6ff
+  ); /* Gradient background for a modern look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px 40px; /* Adequate padding for spacing */
+  display: flex;
+  justify-content: center; /* Center content for symmetry */
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limit width for a clean look on large screens */
+}
+
+.header__title {
+  font-size: 28px; /* Slightly smaller, refined font size */
+  font-weight: 700; /* Bold for emphasis */
+  color: white;
+  text-transform: uppercase; /* All caps for a clean, uniform look */
+  letter-spacing: 2px; /* Increased spacing for modern typography */
+  margin: 0;
+}
+
+/* Styles for ProductComparison component */
+.product-comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Light and soothing background */
+  min-height: 100vh;
+}
+
+.product-comparison__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Increased gap to allow more space between the images */
+  margin-top: 20px;
+}
+
+/* Larger image styling with border and shadow */
+.product-comparison__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-comparison__image {
+  width: 300px; /* Increased image size */
+  height: 300px; /* Increased image size */
+  object-fit: cover;
+  border-radius: 15px; /* Slightly more rounded corners */
+  border: 2px solid #ccc; /* Softer border color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-comparison__image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+/* Rounded buttons with hover animation */
+.product-comparison__button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-comparison__button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.product-comparison__button:active {
+  background-color: #004494;
+  transform: translateY(-1px);
+}
+
+/* Result message styling */
+.product-comparison__result {
+  margin-top: 40px;
+  font-size: 28px; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #2c3e50; /* Darker, sophisticated color */
+  text-align: center;
+  background-color: #ffffff; /* White background for emphasis */
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Score display styling */
+.product-comparison__score {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #16a085; /* Calming green color for the score */
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ecf0f1; /* Light gray background */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}

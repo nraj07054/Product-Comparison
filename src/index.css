@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Title styling */
+.product-comparison__title {
+  font-size: 36px; /* Large font size */
+  font-weight: bold;
+  color: #34495e; /* Dark, elegant color */
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px; /* Slight spacing between letters */
+  text-transform: uppercase; /* Convert title to uppercase */
+  background: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  ); /* Gradient background for title */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
